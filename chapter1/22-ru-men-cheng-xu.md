@@ -32,7 +32,7 @@ class MainHandler(tornado.web.RequestHandler):
     def get(self):
         # 向页面中写入数据
         self.write("hello tornado!")
-        
+
 if __name__ == "__main__":
     # 创建web应用对象
     app = Application(
@@ -45,5 +45,15 @@ if __name__ == "__main__":
     tornado.ioloop.IOLoop.curren().start()
 ```
 
+编辑完上述代码之后，在当前目录下运行终端，执行如下命令：
 
+```
+/home/py_workspace/tornado/lessons01$ python server.py
+```
+
+执行完成后，你会发现终端命令行处在一个等待的状态...
+
+此时，web服务器启动完成，我们打开浏览器访问一下吧
+
+打开浏览器，输入http://localhost:8000/访问看看吧
 
