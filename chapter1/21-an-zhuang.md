@@ -20,6 +20,8 @@ desc: 课程教案
 
 等待下载安装结束， Congratulations，你安装完成了，就是这么简单！
 
+![](/assets/windows)
+
 ### 2. ubuntu安装
 
 ubuntu系统中，已经内置了python开发环境\(2.x or 3.x\)，默认情况下，是通过软连接链接使用的python2的开发环境，当然，这个不是我们要关注的，我们关注的是你已经在ubuntu上安装好了pip包管理工具
