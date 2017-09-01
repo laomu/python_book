@@ -6,5 +6,19 @@ version: V1.00
 desc: 课程教案
 ---
 
+# 安装tornado
+
+### 1. windows安装
+
+
+
+### 2. ubuntu安装
+
+
+
+### 3. mac os安装
+
+
+
 
 
