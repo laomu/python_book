@@ -44,7 +44,13 @@ $ sudo pip install tornado
 
 如果你使用的是mac系统，基本上应该也是非常有眼光的开发人员了，同时对自己的开发标准定为还是很高的，基本上这一部分就自己解决了！PS：上述几句话是废话
 
-干货请看这里：Mac上已经内置了python的开发环境，但是python官方同样也提示了不要使用mac内置的python开发环境了，而是自己从python官网下载安装一个吧，并且和系统内置的python开发环境不会有什么冲突的！
+干货请看这里：Mac上已经内置了python的开发环境，但是python官方同样也提示了不要使用mac内置的python开发环境了，而是自己从python官网下载安装一个吧，并且和系统内置的python开发环境不会有什么冲突的！安装过程中可以选择安装pip，或者安装结束后通过easy\_install安装pip，或者通过brew安装pip都是可以的哦。
+
+最后，直接通过如下命令在终端进行tornado安装即可：
+
+```
+$ sudo install tornado
+```
 
 
 
