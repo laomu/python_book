@@ -55,5 +55,5 @@ if __name__ == "__main__":
 
 此时，web服务器启动完成，我们打开浏览器访问一下吧
 
-打开浏览器，输入http://localhost:8000/访问看看吧
+打开浏览器，输入[http://localhost:800](http://localhost:8000/访问看看吧)0 访问看看吧！
 
