@@ -1,6 +1,4 @@
-# 安全COOKIE
-
-
+# SECRET COOKIE
 
 
 
