@@ -12,13 +12,13 @@ desc: 课程教案
 
 先确定好你的开发目录，进入开发目录后，创建我们的第一个tornado程序文件：server.py
 
-```
+```bash
 /home/py_workspace/tornado/lessons01/server.py
 ```
 
 创建好我们的文件之后，编辑server.py，添加如下代码
 
-```
+```python
 # -*- coding:utf-8 -*-
 
 # 引入依赖的模块

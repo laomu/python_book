@@ -14,7 +14,7 @@ desc: 课程教案
 
 那么接下来，打开命令行，执行如下命令
 
-```
+```bash
 > pip install tornado
 ```
 
@@ -28,7 +28,7 @@ ubuntu系统中，已经内置了python开发环境\(2.x or 3.x\)，默认情况
 
 什么？你没有安装pip？你是怎么进行python开发的？没事，现在安装还来得及，打开终端，执行如下命令安装pip（python install package）
 
-```
+```bash
 $ sudo apt-get install python-pip
 ```
 
@@ -52,7 +52,7 @@ $ sudo pip install tornado
 
 最后，直接通过如下命令在终端进行tornado安装即可：
 
-```
+```bash
 $ sudo install tornado
 ```
 
