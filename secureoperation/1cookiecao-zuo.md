@@ -52,5 +52,57 @@ if __name__ == "__main__":
 
 如下图查看访问网站时存储的cookie数据，查看每一个保存的cookie数据有什么不一样。
 
-![](/assets/cookie01)
+![](/assets/cookie1)
+
+
+
+### 2. 获取cookie : get\_cookie\(\*args\)
+
+**get\_cookie\(name, default=None\)**
+
+获取名为name的cookie，可以设置default默认值，当获取不到name对应的cookie值时，返回default默认值
+
+```python
+# -*- coding:utf-8 -*-
+
+from tornado.web import Application, RequestHandler
+from tornado.ioloop import IOLoop
+import time
+
+
+class IndexHandler(RequestHandler):
+    def get(self):
+        self.set_cookie("c1", "v1")
+        self.set_cookie("c2", "v2", domain="localhost")
+        self.set_cookie("c3", "v3", path="/damu")
+        self.set_cookie("c4", "v4", expires=time.strptime("2017-10-10 23:59:59", "%Y-%m-%d %H:%M:%S"))
+        self.set_cookie("c5", "v5", expires_days=10)
+        self.set_cookie("c6", "v6", expires=time.mktime(time.strptime("2017-10-10 23:59:59", "%Y-%m-%d %H:%M:%S")))
+        self.write("request access successfully!")
+
+
+class CookieHandler(RequestHandler):
+
+    def get(self):
+        v1 = self.get_cookie("c1")
+        v2 = self.get_cookie("c2")
+        v3 = self.get_cookie("c3")
+        v4 = self.get_cookie("c4")
+        v5 = self.get_cookie("c5")
+        v6 = self.get_cookie("c6")
+        print ("v1: %s" % v1)
+        print ("v2: %s" % v2)
+        print ("v3: %s" % v3)
+        print ("v4: %s" % v4)
+        print ("v5: %s" % v5)
+        print ("v6: %s" % v6)
+        self.write("cookie operation successfully!")
+
+if __name__ == "__main__":
+    app = Application([(r"/", IndexHandler), (r"/cookie", CookieHandler)])
+    app.listen(8888)
+    IOLoop.current().start()
+```
+
+执行上述代码
 
