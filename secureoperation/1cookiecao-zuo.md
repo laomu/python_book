@@ -109,7 +109,7 @@ cookie中可以保存数据，同样也可以删除cookie中的数据
 
 删除数在tornado中有两种操作，删除某一个指定的cookie或者清除所有的cookie
 
-核心操作：清空cookie中name对应的值，并设置cookie的过期时间让cookie过期，由浏览器删除对应的cookie
+删除cookie的原理：清空cookie中name对应的值，并设置cookie的过期时间让cookie过期，由浏览器删除对应的cookie
 
 ```
 clear_cookie(name, path="/", domain=None)
