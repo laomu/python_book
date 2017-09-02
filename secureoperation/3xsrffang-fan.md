@@ -41,6 +41,10 @@ if __name__ == "__main__":
     IOLoop.current().start()
 ```
 
+在Appication中设置了cookie\_secret和xsrf配置之后，我们通过postman测试工具模拟get方式和post方式发送请求，查看设置之后的操作结果
+
+
+
 ### 3. XSRF请求操作
 
 
