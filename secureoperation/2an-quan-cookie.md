@@ -34,7 +34,8 @@ app = Application(
 ### 2. 安全cookie设置
 
 ```
-set_secret_cookie(name, value, path="/", domain=None)
+set_secret_cookie(name, value, path="/", domain=None, expires_days=1)
+通过混淆秘钥设置一个带签名和时间戳的cookie数据，防止cookie伪造
 ```
 
 
