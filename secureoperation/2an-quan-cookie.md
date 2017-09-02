@@ -1,3 +1,11 @@
+---
+author: 牟文斌
+qq: 1007821300
+email: muwenbin@qikux.com
+version: V1.00
+desc: 课程教案
+---
+
 # SECRET COOKIE
 
 cookie数据是保存在浏览器客户端所在电脑中的文本文件，很容易造成cookie数据泄露或者被伪造篡改等一系列安全问题。
@@ -20,6 +28,4 @@ app = Application(
     cookie_secret:True
 )
 ```
-
-
 

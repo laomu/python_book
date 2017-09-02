@@ -1,3 +1,11 @@
+---
+author: 牟文斌
+qq: 1007821300
+email: muwenbin@qikux.com
+version: V1.00
+desc: 课程教案
+---
+
 # cookie操作
 
 cookie在web应用开发过程中，经常用于会话跟踪技术的使用
@@ -144,6 +152,4 @@ class CookieDeleteHandler(RequestHandler):
 
         self.write("cookie operation successfully!")
 ```
-
-
 
