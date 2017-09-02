@@ -54,9 +54,9 @@ if __name__ == "__main__":
 
 ![](/assets/cookie1)
 
-
-
-> 备注：cookie的操作，其实在底层主要是通过header响应头设置Set-cookie进行操作的
+> 备注：cookie设置原理
+>
+> cookie的操作，其实在底层主要是通过header响应头设置Set-cookie进行操作的
 >
 > ```python
 > class CookieOpraHandler(RequestHandler):
