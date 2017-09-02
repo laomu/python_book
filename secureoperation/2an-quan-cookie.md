@@ -12,5 +12,11 @@ Tornado提供了一种cookie的安全操作策略，可以通过给cookie添加�
 'pfC0QLEiS/6lsdMeHJf7i9arp6QQLkU1shdMwkvZeVs='
 ```
 
+有了混淆秘钥之后，我们将该秘钥通过Appliacation的初始化函数中添加配置即可
+
+```python
+
+```
+
 
 
