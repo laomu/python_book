@@ -97,13 +97,17 @@ if __name__ == "__main__":
     IOLoop.current().start()
 ```
 
-执行上述代码，打开浏览器输入访问地址：**http://localhost:8888**给cookie设置值
+执行上述代码，打开浏览器输入访问地址：[http://localhost:8888](http://localhost:8888)给cookie设置值
 
-然后再次访问http://localhost:8888/cookie访问数据，在控制台得到如下结果：
+然后再次访问[http://localhost:8888/cookie访问数据，在控制台得到如下结果：](http://localhost:8888/cookie访问数据，在控制台得到如下结果：)
 
 ![](/assets/cookie2)
 
+### 3. 删除cookie ：clear\_cookie\(\*args\)
 
+cookie中可以保存数据，同样也可以删除cookie中的数据
+
+删除数在tornado中有两种操作，删除某一个指定的cookie或者清除所有的cookie
 
 
 
