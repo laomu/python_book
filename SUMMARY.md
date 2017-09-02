@@ -7,4 +7,5 @@
   * [2.3 核心API介绍](chapter1/23-he-xin-api-jie-shao.md)
 * [SECURE\_OPERATION](secureoperation.md)
   * [1.cookie操作](secureoperation/1cookiecao-zuo.md)
+  * [2.安全cookie](secureoperation/2an-quan-cookie.md)
 
