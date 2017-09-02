@@ -54,6 +54,17 @@ if __name__ == "__main__":
 
 ![](/assets/cookie1)
 
+
+
+> 备注：cookie的操作，其实在底层主要是通过header响应头设置Set-cookie进行操作的
+>
+> ```python
+> class CookieOpraHandler(RequestHandler):
+>     def get(self):
+>         self.set_header("Set-Cookie", "n5=v5; expires=Fri, 11 Nov 2016 15:59:59 GMT; Path=/") 
+>         self.write("OK")
+> ```
+
 ### 2. 获取cookie : get\_cookie\(\*args\)
 
 **get\_cookie\(name, default=None\)**
