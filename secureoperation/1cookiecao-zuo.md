@@ -97,5 +97,15 @@ if __name__ == "__main__":
     IOLoop.current().start()
 ```
 
-执行上述代码
+执行上述代码，打开浏览器输入访问地址：**http://localhost:8888**给cookie设置值
+
+然后再次访问http://localhost:8888/cookie访问数据，在控制台得到如下结果：
+
+![](/assets/cookie2)
+
+
+
+
+
+
 
