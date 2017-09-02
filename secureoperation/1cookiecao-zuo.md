@@ -117,8 +117,21 @@ clear_cookie(name, path="/", domain=None)
 ```
 
 ```
-clear_all_cookie(name, path="/", domain=None)
+clear_all_cookies(name, path="/", domain=None)
 删除同时匹配path和domain的所有的cookie值
+```
+
+在我们的案例代码中，添加删除cookie的操作如下：
+
+```python
+class CookieDeleteHandler(RequestHandler):
+
+    def get(self):
+        self.clear_cookie("c1")
+
+        self.clear_all_cookies()
+
+        self.write("cookie operation successfully!")
 ```
 
 
