@@ -54,8 +54,6 @@ if __name__ == "__main__":
 
 ![](/assets/cookie1)
 
-
-
 ### 2. 获取cookie : get\_cookie\(\*args\)
 
 **get\_cookie\(name, default=None\)**
@@ -72,12 +70,7 @@ import time
 
 class IndexHandler(RequestHandler):
     def get(self):
-        self.set_cookie("c1", "v1")
-        self.set_cookie("c2", "v2", domain="localhost")
-        self.set_cookie("c3", "v3", path="/damu")
-        self.set_cookie("c4", "v4", expires=time.strptime("2017-10-10 23:59:59", "%Y-%m-%d %H:%M:%S"))
-        self.set_cookie("c5", "v5", expires_days=10)
-        self.set_cookie("c6", "v6", expires=time.mktime(time.strptime("2017-10-10 23:59:59", "%Y-%m-%d %H:%M:%S")))
+        ......
         self.write("request access successfully!")
 
 
