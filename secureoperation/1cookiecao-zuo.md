@@ -23,7 +23,7 @@ cookie在web应用开发过程中，经常用于会话跟踪技术的使用
 
 那么，接下来，我们先看如下代码，通过不同的方式保存cookie：
 
-```
+```python
 # -*- coding:utf-8 -*-
 
 from tornado.web import Application, RequestHandler
