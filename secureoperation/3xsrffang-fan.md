@@ -43,7 +43,16 @@ if __name__ == "__main__":
 
 在Appication中设置了cookie\_secret和xsrf配置之后，我们通过postman测试工具模拟get方式和post方式发送请求，查看设置之后的操作结果
 
+| get请求方式 | post请求方式 |
+| :--- | :--- |
+| ![](/assets/get) | ![](/assets/post) |
 
+get方式请求数据正常，但是post方式出现了403禁止访问的错误，同时控制台已经出现警告提示信息
+
+```
+WARNING:tornado.general:403 POST / (::1): '_xsrf' argument missing from POST
+WARNING:tornado.access:403 POST / (::1) 0.49ms
+```
 
 ### 3. XSRF请求操作
 
