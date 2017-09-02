@@ -109,7 +109,7 @@ cookie中可以保存数据，同样也可以删除cookie中的数据
 
 删除数在tornado中有两种操作，删除某一个指定的cookie或者清除所有的cookie
 
+**clear\_cookie\(name, path="/", domain=None\)**
 
-
-
+删除名称为name，同时匹配path和domain的cookie数据
 
