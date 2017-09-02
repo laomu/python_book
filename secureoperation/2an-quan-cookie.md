@@ -73,9 +73,7 @@ if __name__ == "__main__":
     IOLoop.current().start()
 ```
 
-此时，打开浏览器访问**http://localhost:8888**查看设置的安全cookie数据如下：
-
-
+此时，打开浏览器访问[http://localhost:8888](http://localhost:8888)查看设置的安全cookie数据如下：
 
 
 
