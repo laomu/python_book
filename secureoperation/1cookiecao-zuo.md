@@ -4,8 +4,6 @@ cookie在web应用开发过程中，经常用于会话跟踪技术的使用
 
 在tornado.web.RequestHandler中已经封装了对cookie的操作
 
-
-
 ### 1. 设置cookie : set\_cookie\(\*args\)
 
 **set**_**cookie\(name, value, domain=None, expires=None, path="/", expires\_days=None**_**\)**
@@ -48,5 +46,9 @@ if __name__ == "__main__":
     IOLoop.current().start()
 ```
 
+运行程序，打开浏览器，访问**http://localhost:8888**查看结果：
 
+如下图查看访问网站时存储的cookie数据，查看每一个保存的cookie数据有什么不一样。
+
+![](/assets/cookie01)
 
