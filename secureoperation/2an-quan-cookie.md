@@ -15,7 +15,10 @@ Tornado提供了一种cookie的安全操作策略，可以通过给cookie添加�
 有了混淆秘钥之后，我们将该秘钥通过Appliacation的初始化函数中添加配置即可
 
 ```python
-
+app = Application(
+    [(r"/", Indexhandler)],
+    cookie_secret:True
+)
 ```
 
 
