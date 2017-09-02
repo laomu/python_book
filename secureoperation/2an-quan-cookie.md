@@ -31,12 +31,51 @@ app = Application(
 )
 ```
 
-### 2. 安全cookie设置
+### 2. 安全cookie操作
 
-```
+```python
 set_secret_cookie(name, value, path="/", domain=None, expires_days=1)
 通过混淆秘钥设置一个带签名和时间戳的cookie数据，防止cookie伪造
 ```
+
+```
+get_secret_cookie(name, value=None, max_age_days=1)
+根据name获取一个安全cookie值，如果没有获取到则返回一个value设定的值
+max_age_days可以通过时间过滤符合安全条件的cookie数据
+```
+
+可以通过配置cookie\_secret之后，通过cookie安全操作方法进行cookie的赋值和取值
+
+```python
+# -*- coding:utf-8 -*-
+
+from tornado.web import Application, RequestHandler
+from tornado.ioloop import IOLoop
+import uuid, base64
+
+
+class IndexHandler(RequestHandler):
+
+    def get(self):
+        self.set_secure_cookie("sc1", "sv1")
+        self.write("ok!")
+
+
+if __name__ == "__main__":
+    cookie_secret = base64.b64encode(uuid.uuid4().bytes + uuid.uuid4().bytes)
+
+    app = Application(
+        [(r"/", IndexHandler)],
+        cookie_secret=cookie_secret
+    )
+    app.listen(8888)
+
+    IOLoop.current().start()
+```
+
+此时，打开浏览器访问**http://localhost:8888**查看设置的安全cookie数据如下：
+
+
 
 
 
