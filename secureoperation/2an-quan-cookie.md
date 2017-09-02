@@ -12,6 +12,10 @@ cookie数据是保存在浏览器客户端所在电脑中的文本文件，很�
 
 Tornado提供了一种cookie的安全操作策略，可以通过给cookie添加混淆秘钥cookie\_secret，生成被加密操作之后的cookie
 
+
+
+### 1. 混淆秘钥的设定
+
 要操作安全cookie首先我们得得到一个混淆秘钥，混淆秘钥可以通过UUID来获取，同时使用base64进行编码：
 
 ```
@@ -28,4 +32,6 @@ app = Application(
     cookie_secret:True
 )
 ```
+
+
 
