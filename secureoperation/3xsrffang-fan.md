@@ -76,7 +76,7 @@ WARNING:tornado.access:403 POST / (::1) 0.49ms
 
 此时，我们通过模板页面中表单的改造，完成xsrf防范下的表单请求问题：
 
-```HTML
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,6 +94,8 @@ WARNING:tornado.access:403 POST / (::1) 0.49ms
 </body>
 </html>
 ```
+
+添加验证之后，通过模板提交请求，数据就能正常访问了，并且请求参数中我们会发现附带了\_xsrf数据![](/assets/xsrf1)
 
 
 
