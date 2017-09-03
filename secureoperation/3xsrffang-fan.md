@@ -1,3 +1,11 @@
+---
+author: 牟文斌
+qq: 1007821300
+email: muwenbin@qikux.com
+version: V1.00
+desc: 课程教案
+---
+
 # XSRF跨域请求伪造防范
 
 ### 1. 什么是XSRF
@@ -60,11 +68,5 @@ WARNING:tornado.access:403 POST / (::1) 0.49ms
 
 ##### 3.1. 模板应用
 
-
-
 ##### 3.2. 非模板应用
-
-
-
-
 
