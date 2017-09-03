@@ -68,5 +68,36 @@ WARNING:tornado.access:403 POST / (::1) 0.49ms
 
 ##### 3.1. 模板应用
 
+模板应用中，如果常规的表单提交时，由于添加了xsrf\_cookies跨域请求限制，导致请求出现403被拒绝的情况，所以在模板应用中，我们通过添加xsrf验证来解决这个问题
+
+```
+{% module xsrf_form_html()%}
+```
+
+此时，我们通过模板页面中表单的改造，完成xsrf防范下的表单请求问题：
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板页面</title>
+</head>
+<body>
+<form action="/" method="post">
+    <!-- 模板中添加xsrf验证 -->
+    {% module xsrf_form_html() %}
+    name: <input type="text" name="name">
+    msg: <input type="text" name="msg">
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
+```
+
+
+
 ##### 3.2. 非模板应用
+
+
 
