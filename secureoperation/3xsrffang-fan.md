@@ -87,9 +87,9 @@ WARNING:tornado.access:403 POST / (::1) 0.49ms
 <form action="/" method="post">
     <!-- 模板中添加xsrf验证 -->
     {% xsrf_form_html() %}
-    name: <input type="text" name="name">
-    msg: <input type="text" name="msg">
-    <input type="submit" value="提交">
+    name: <input type="text" name="name"/>
+    msg: <input type="text" name="msg"/>
+    <input type="submit" value="提交"/>
 </form>
 </body>
 </html>
