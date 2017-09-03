@@ -103,7 +103,4 @@ WARNING:tornado.access:403 POST / (::1) 0.49ms
 
 此时我们就要提及get方式和post方式的区别了，这里我们通过get\(\)方式提交请求获取包含xsrf验证码的网页，后续的填写表单数据，提交数据都是正常操作流程了。
 
-我们修改后端torando代码如下：
-```
-# -*- coding:utf-8
-```
+我们修改后端torando代码如下
